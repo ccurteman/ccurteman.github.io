@@ -1,277 +1,172 @@
-
-<!doctype html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <head>
 
-	<link rel="stylesheet" href="./css/index_style.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-	<title>Chris Curteman</title>
-</head>
+    <title>Chris Curteman - Portfolio Website</title>
 
-<body>
-	<section id="navbar">
-		<nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
-			<a class="navbar-brand" href="#">Chris Curteman</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item active">
-						<a class="nav-link" href="index.html">
-                            <button class="btn btn-secondary" type="button">
-                                Home
-                            </button>
-                        </a>
-					</li>
-					<li class="nav-item active">
-						<a class="nav-link" href="portfolio.html">
-                            <button class="btn btn-secondary" type="button">
-                                Portfolio
-                            </button>
-                        </a>
-					</li>
-					<li class="nav-item active">
-						<a class="nav-link" href="contact.html">
-                            <button class="btn btn-secondary" type="button">
-                                Contact
-                            </button>
-                        </a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-	</section>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-	<section class="container-fluid" id="home">
-		<h1 class="display-4" id="banner">Hello, world</h1>
-		<img src="./images/faceshot.jpg" class="img-thumbnail rounded-circle mx-auto d-block" alt="...">
-	</section>
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 
-	<br><br>
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
-	<div class="container-fluid" id="bodywrap">
-		<section id="portfolio" class="text-center">
-			<div id="portfolioslides" class="carousel slide" data-ride="carousel">
-				<p class="lead text-center text-white">Experience In</p>
-				<ol class="carousel-indicators bg-secondary">
-					<li data-target="#portfolioslides" data-slide-to="0" class="active"></li>
-					<li data-target="#portfolioslides" data-slide-to="1"></li>
-					<li data-target="#portfolioslides" data-slide-to="2"></li>
-					<li data-target="#portfolioslides" data-slide-to="3"></li>
-					<li data-target="#portfolioslides" data-slide-to="4"></li>
-					<li data-target="#portfolioslides" data-slide-to="5"></li>
-					<li data-target="#portfolioslides" data-slide-to="6"></li>
-					<li data-target="#portfolioslides" data-slide-to="7"></li>
-				</ol>
-				<div class="carousel-inner">
-					<div class="carousel-item active">
-						<div class="jumbotron">
-							<h1 class="display-4">Python</h1>
-						</div>
-					</div>
-					<div class="carousel-item">
-						<div class="jumbotron">
-							<h1 class="display-4">C++</h1>
-						</div>
-					</div>
-					<div class="carousel-item">
-						<div class="jumbotron">
-							<h1 class="display-4">HTML5</h1>
-						</div>
-					</div>
-					<div class="carousel-item">
-						<div class="jumbotron">
-							<h1 class="display-4">CSS3</h1>
-						</div>
-					</div>
-					<div class="carousel-item">
-						<div class="jumbotron">
-							<h1 class="display-4">JavaScript</h1>
-						</div>
-					</div>
-					<div class="carousel-item">
-						<div class="jumbotron">
-							<h1 class="display-4">C#</h1>
-						</div>
-					</div>
-					<div class="carousel-item">
-						<div class="jumbotron">
-							<h1 class="display-4">Bootstrap</h1>
-						</div>
-					</div>
-					<div class="carousel-item">
-						<div class="jumbotron">
-							<h1 class="display-4">SQL Server</h1>
-						</div>
-					</div>
-				</div>
-		</section>
+    <!-- Custom styles for this template -->
+    <link href="css/creative.min.css" rel="stylesheet">
 
-		<br><br>
+  </head>
 
-		<div class="text-center">
-			<h1 class="display-4">Portfolio</h1>
-			<p class="lead text-center">Expand each catagory to learn more about my path</p>
-		</div>
-		<div id="accordion">
-			<div class="card">
-				<div class="card-header" id="headingOne">
-					<h5 class="mb-0">
-	        			<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-	          				HTML / CSS / Bootsrap
-	        			</button>
-      				</h5>
-				</div>
-				<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-					<div class="card-body">
-						<p>My experience with HTML started many years ago, in 2008. But my real training was at <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a>, where I studied web developement.
-							HTML was one of the first languages I learned, which was followed by Cascading Style Sheets 3.
-							I have experience working with the framework Bootstrap (which this website was built with!) version 3 and 4.
-						</p>
-						<p>
-							<a class="btn btn-info" data-toggle="collapse" href="#collapseHTML" role="button" aria-expanded="false" aria-controls="collapseExample">
-							    Projects
-							  </a>
-						</p>
-						<div class="collapse" id="collapseHTML">
-							<div class="card card-body">
-								<a href="https://github.com/ccurteman/CinemaFE" target="_blank">Sample Theater Website</a>
-								<a href="https://github.com/ccurteman/LoginSample" target="_blank">Small Login Plug</a>
-								<a href="https://ccurteman.github.io/">This Website</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="card">
-				<div class="card-header" id="headingTwo">
-					<h5 class="mb-0">
-			        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-			         	Python
-			        </button>
-			      	</h5>
-				</div>
-				<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-					<div class="card-body">
-						<p>I learned Python back in 2014 in my first Computer Science class at <a href="https://www.pdx.edu/" target="_blank">Portland State University</a>. I learned the fundementals of programming in this language</p>
-						<p>
-							<a class="btn btn-info" data-toggle="collapse" href="#collapsePython" role="button" aria-expanded="false" aria-controls="collapseExample">
-								Projects
-							</a>
-						</p>
-						<div class="collapse" id="collapsePython">
-							<div class="card card-body">
+  <body id="page-top">
 
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="card">
-				<div class="card-header" id="headingThree">
-					<h5 class="mb-0">
-						<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-							JavaScript
-						</button>
-					</h5>
-				</div>
-				<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-					<div class="card-body">
-						<p>I learned JavaScript as part of my course work at <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a>. Below are links to sample work utilizing JavaScript.</p>
-						<p>
-							<a class="btn btn-info" data-toggle="collapse" href="#collapseJS" role="button" aria-expanded="false" aria-controls="collapseExample">
-								Projects
-							</a>
-						</p>
-						<div class="collapse" id="collapseJS">
-							<div class="card card-body">
-								<a href="https://github.com/ccurteman/PizzaOrderSample" target="_blank">Sample Resturuant Ordering</a>
-								<a href="https://github.com/ccurteman/Knockout" target="_blank">Simple KnockoutJS Sample</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="card">
-				<div class="card-header" id="headingFour">
-					<h5 class="mb-0">
-	        			<button class="btn btn-link" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-	          				SQL Server
-	        			</button>
-      				</h5>
-				</div>
-				<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
-					<div class="card-body">
-						<p>I completed course work of SQL Server at <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a>.</p>
-						<p>
-							<a class="btn btn-info" data-toggle="collapse" href="#collapseSQL" role="button" aria-expanded="false" aria-controls="collapseExample">
-							    Projects
-							  </a>
-						</p>
-						<div class="collapse" id="collapseSQL">
-							<div class="card card-body">
-								<a href="https://github.com/ccurteman/SqlLibrarySample" target="_blank">Sample Library Database with some built-in procedures</a>.
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="card">
-				<div class="card-header" id="headingFive">
-					<h5 class="mb-0">
-	        			<button class="btn btn-link" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-	          				C#
-	        			</button>
-      				</h5>
-				</div>
-				<div id="collapseFive" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-					<div class="card-body">
-						<p>I learned C# at <a href="" target="_blank">The Tech Academy</a>. But my experience with C# started when I dabbled with game engines such as Unity and Unreal4, purely as a hobby.</p>
-						<p>
-							<a class="btn btn-info" data-toggle="collapse" href="#collapseC#" role="button" aria-expanded="false" aria-controls="collapseC#">
-							    Projects
-							  </a>
-						</p>
-						<div class="collapse" id="collapseC#">
-							<div class="card card-body">
-								<a href="https://github.com/ccurteman/BlackJack" target="_blank">Console Blackjack Game</a>
-								<a href="https://github.com/ccurteman/ComicBooks/tree/master/FirstChallenge" target="_blank">Sample Comic Book Archive</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Chris Curteman</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-		<br><br>
+    <header class="masthead text-center text-white d-flex">
+      <div class="container my-auto">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h1 class="text-uppercase">
+              <strong>Hello, World</strong>
+              <br />
+              <strong>Welcome to my site</strong>
+            </h1>
+            <hr>
+          </div>
+          <div class="col-lg-8 mx-auto">
+            <p class="text-faded mb-5">Take a look around at my services, portfolio, or contact info!</p>
+          </div>
+        </div>
+      </div>
+    </header>
 
-		<p class="display-4 text-center">Contact Info</p>
-		<div class="collapse" id="collapseExample">
-			<div class="card card-body">
-				<img class="card-img-top" src="./images/csharp_blackjack2.png" alt="Card image cap">
-			</div>
-		</div>
-		<ul class="text-center">
-			<li>
-				<p class="lead">c.curteman@gmail.com</p>
-			</li>
-			<li>
-				<p class="lead"><a href="https://www.linkedin.com/in/chris-curteman-8371b115a/">LinkedIn</a></p>
-			</li>
-			<li>
-				<p class="lead"><a href="https://github.com/ccurteman/">Github</a></p>
-			</li>
-		</ul>
-	</div>
+    <section class="bg-primary" id="about">
+      <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h2 class="section-heading text-white">My Name is Chris Curteman</h2>
+                <img src="./img/faceshot.jpg" alt="faceshot" style="height:45%;width:30%;border-radius:50%;"/>
+                <hr class="light my-4">
+                <p class="text-faded mb-4">I'm a fullstack web developer with experience in a variety of languages, tools, and frameworks, including: </p>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item text-faded" style="background-color:#f05f40">HTML, CSS, and Bootstrap</li>
+                    <li class="list-group-item text-faded" style="background-color:#f05f40">Python, JavaScript, Node.js, Angular.js, AJAX, and JSON</li>
+                    <li class="list-group-item text-faded" style="background-color:#f05f40">C#, C++, SQL Server, and MongoDB</li>
+                    <li class="list-group-item text-faded" style="background-color:#f05f40">Agile / Scrum, and MVC Framework</li>
+                </ul>
+            </div>
+        </div>
+      </div>
+    </section>
 
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</body>
+    <section class="p-0" id="portfolio">
+      <div class="container-fluid p-0">
+        <div class="row no-gutters popup-gallery">
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/fullsize/1.jpg">
+              <img class="img-fluid" src="img/portfolio/thumbnails/1.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Category
+                  </div>
+                  <div class="project-name">
+                    HTML / CSS / Bootstrap
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/fullsize/2.jpg">
+              <img class="img-fluid" src="img/portfolio/thumbnails/2.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Category
+                  </div>
+                  <div class="project-name">
+                    JavaScript and Associated Frameworks
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/fullsize/3.jpg">
+              <img class="img-fluid" src="img/portfolio/thumbnails/3.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Category
+                  </div>
+                  <div class="project-name">
+                    C# and Other Large Applications
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading">Let's Get In Touch!</h2>
+            <hr class="my-4">
+          </div>
+        </div>
+        <ul class="list-group list-group-flush text-center">
+            <li class="list-group-item">503-956-9336</li>
+            <li class="list-group-item">c.curteman@gmail.com</li>
+            <li class="list-group-item"><a href="https://github.com/ccurteman" target="_blank">https://github.com/ccurteman</a></li>
+            <li class="list-group-item"><a href="https://www.linkedin.com/in/chris-curteman-8371b115a/#">https://www.linkedin.com/in/chris-curteman-8371b115a/</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/creative.min.js"></script>
+
+  </body>
 
 </html>
