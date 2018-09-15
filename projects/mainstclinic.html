@@ -1,52 +1,102 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>MainStClinic</title>
-  </head>
-  <body>
-	  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  		<a class="navbar-brand" href="#">Chris Curteman</a>
-  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="../css/presentationtemplate.css">
+
+	<title>Main Steet Clinic</title>
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<a class="navbar-brand" href="../index.html">Chris Curteman</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       		<span class="navbar-toggler-icon"></span>
     		</button>
 
-  		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-  			<div class="float-right">
-  				<ul class="navbar-nav mr-auto">
-  					<li class="nav-item">
-  						<a class="nav-link" href="../index.html">Home</a>
-  					</li>
-  					<li class="nav-item">
-  						<a class="nav-link" href="../portfolio.html">Portfolio</a>
-  					</li>
-  					<li class="nav-item">
-  						<a class="nav-link" href="../contact.html">Contact</a>
-  					</li>
-  					<li class="nav-item">
-  						<a class="nav-link disabled" href="#">Blog</a>
-  					</li>
-  				</ul>
-  			</div>
-  		</div>
-  	</nav>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<div class="float-right">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="../index.html">Home</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="../portfolio.html">Portfolio</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../contact.html">Contact</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link disabled" href="#">Blog</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
 
-    <div class="container-fluid">
-        <!-- Project Presentation Header-->
-        <!-- Links to GitHub -->
-        <!-- Text blurp about what the project is -->
-        <!-- Image of the project code -->
-        <!-- Text about work I wrote -->
-        <!-- Image blurp of work I wrote -->
+	<!-- Project Presentation Header-->
+	<div class="jumbotron text-center">
+		<h1 class="display-4">Main Street Clinic</h1>
+		<p class="lead">.net mvc application patient tracking</p>
+	</div>
 
-    </div>
+	<div class="container-fluid">
+		<div class="container" id="container-wrapper">
+			<div class="row">
+				<div class="col-sm">
+					<p class="lead">This project was built for a client in order to track patient symptoms with assosciated health recommendations. I built the project from conception to implementation. The application to connected to a Sql Server relational database. The project was built with a database first approach, with the models being generated directly from the database.</p>
+				</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-sm">
+					<p class="lead">The first step in the project involved the creation of a database system. I started with the needs of the client - what needed to be tracked, how the different data would correspond with each other, etc. From there a database was protyped and tested. After the needs of the client were met by the database, the database was normalized (at least through the 3rd normal form).</p>
+					<p class="lead">Once the database was built, and I was confident it would only need minor adjustements, the focus of the project switched to the front-end.</p>
+				</div>
+				<div class="col-sm">
+					<a target="_top" href="../img/bullsandcows/console_one.png">
+                        <img src="../img/bullsandcows/console_one.png" alt="console_one.png" id="console_one">
+                    </a>
+					<p class="lead text-center text-muted">Picture of the database</p>
+				</div>
+			</div>
+			<hr><br>
+			<div class="row">
+				<div class="col-sm">
+					<a href="../img/bullsandcows/logic_one.png">
+						<img src="../img/bullsandcows/logic_one.png" alt="logic_one" id="logic_one">
+					</a>
+					<p class="lead text-center text-muted">Picture of the code of user facing front-end</p>
+				</div>
+				<div class="col-sm">
+					<p class="lead">The application was built using a .Net MVC structure. There were two main focal points for this step of the project. Firstly, to create a framework that would allow the client's office to easily manipulate data while maintaining database integrity. And secondly, to take that data and relate it to the physician in such a way that is useful and informative.</p>
+					<p class="lead"></p>
+				</div>
+			</div>
+			<hr><br>
+			<div class="row">
+				<div class="col-sm">
+					<p class="lead"></p>
+					<p class="lead">Once the front-end was functional, the presentation was cleaned up. Unused code and files were deleted. And the views were tested to ensure the client's needs were satisfied.</p>
+				</div>
+				<div class="col-sm">
+					<a href="../img/bullsandcows/console_two.png">
+						<img src="../img/bullsandcows/console_two.png" alt="console_two" id="console_two">
+					</a>
+					<p class="lead text-center text-muted">Picture of the front-end</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
 </html>
