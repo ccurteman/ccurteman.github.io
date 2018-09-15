@@ -6,34 +6,31 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link rel="stylesheet" href="./css/index.css">
+	<link rel="stylesheet" href="./css/contact.css">
 
 	<title>Hello, world!</title>
 </head>
 
-<!-- TODO Make navbar items stick to right -->
-<!-- TODO Add href to 'Chris Curteman' anchor tags on all navbars -->
-<!-- TODO Make image anchor tags overlap ontop of existing page -->
-
 <body>
 	<!-- Navbar -->
-	<nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		<a class="navbar-brand" href="#">Chris Curteman</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     		<span class="navbar-toggler-icon"></span>
   		</button>
 
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<!-- TODO Make navbar items stick to right -->
 			<div class="float-right">
 				<ul class="navbar-nav mr-auto">
-					<li class="nav-item active">
-						<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Home</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="portfolio.html">Portfolio</a>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="contact.html">Contact</a>
+					<li class="nav-item active">
+						<a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link disabled" href="#">Blog</a>
@@ -43,16 +40,18 @@
 		</div>
 	</nav>
 
-	<div class="container-fluid" id="content-container">
-		<!-- Main Body Content -->
+	<div class="jumbotron text-center">
+		<h1 class="display-4">Contact Information</h1>
+	</div>
 
-		<div class="jumbotron jumbotron-fluid text-light text-center" id="header">
-				<h1 class="display-1" id="header-title">Hello, world</h1>
-				<p class="display-4">My name is <span class="text-success">Chris Curteman</span></p>
-				<h3>I'm a full-stack web developer</h3>
-				<br>
-				<button type="button" class="btn btn-dark"><h5><a href="portfolio.html"  class="text-center text-light">Take a look at my work</a></h5></button>
-		</div>
+	<div class="container-fluid text-center w-25 p-1" id="content-container">
+		<ul class="list-group list-group-flush">
+			<li class="list-group-item"><h4>Chris Curteman</h4></li>
+			<li class="list-group-item"><p class="lead">c.curteman@gmail.com</p></li>
+			<li class="list-group-item"><p class="lead">GitHub</p></li>
+			<li class="list-group-item"><p class="lead">LinkedIn</p></li>
+			<li class="list-group-item"><p class="lead">Resume</p></li>
+		</ul>
 	</div>
 
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

@@ -1,0 +1,24 @@
+.html, .body {
+	height: 100%;
+	margin: 0;
+}
+
+#navbar {
+	background-color: #3c2f2b;
+}
+
+/* TODO Fix Container Height to be full screen */
+#content-container {
+	background: url(../img/index.jpg);
+	background-repeat: no-repeat;
+    background-size: cover;
+	height: 900px;
+}
+
+#header {
+	background-color: transparent;
+}
+
+#header-title {
+	margin-top: 10%;
+}

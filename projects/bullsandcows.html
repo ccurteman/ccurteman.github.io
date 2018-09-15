@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="../css/bullsandcows.css">
+
+	<title>BullsAndCows</title>
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<a class="navbar-brand" href="#">Chris Curteman</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      		<span class="navbar-toggler-icon"></span>
+    		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<div class="float-right">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="../index.html">Home</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="../portfolio.html">Portfolio</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../contact.html">Contact</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link disabled" href="#">Blog</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Project Presentation Header-->
+	<div class="jumbotron text-center">
+		<h1 class="display-4">Bulls And Cows</h1>
+		<p class="lead">A C++ Terminal Game</p>
+	</div>
+
+	<div class="container-fluid">
+		<!-- Links to GitHub -->
+		<!-- Text blurp about what the project is -->
+		<!-- Image of the project code -->
+		<!-- Text about work I wrote -->
+		<!-- Image blurp of work I wrote -->
+		<div class="container" id="container-wrapper">
+			<div class="row">
+				<div class="col-sm">
+					<p class="lead">Bulls and Cows is an old brain teaser style game. The objective of the game is to guess a series of numbers - or a word - using clues called 'bulls' and 'cows'. These clues tell a player either about the position, or the value of the individual characters of the players guess. Using this information, the player tries to deduce the hidden series of numbers or word to win the game.</p>
+				</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-sm">
+					<p class="lead">This console application is built in C++ from the ground up. It simulates a game of Bulls and Cows, assuming that there will be two people playing - a host, and a player.</p>
+					<p class="lead">The host enters in the word they want to use. This word <span class="font-italic">has</span> to be an isogram. The application takes the users input and runs it through</p>
+				</div>
+				<div class="col-sm">
+					<a target="_top" href="../img/bullsandcows/console_one.png">
+                        <img src="../img/bullsandcows/console_one.png" alt="console_one.png" id="console_one">
+                    </a>
+					<p class="lead text-center text-muted">Host entering in a word for the player to guess</p>
+				</div>
+			</div>
+			<hr><br>
+			<div class="row">
+				<div class="col-sm">
+					<a href="../img/bullsandcows/logic_one.png">
+						<img src="../img/bullsandcows/logic_one.png" alt="logic_one" id="logic_one">
+					</a>
+					<p class="lead text-center text-muted">Shown are some of the methods for validating user input</p>
+				</div>
+				<div class="col-sm">
+					<p class="lead">The application runs in a series of states. At a high level the application outputs instructions, processes input, and then outputs a response to that input.</p>
+					<p class="lead">Input taken from the user is run through a series of validation methods to check if the word or guess is an isogram, the correct length, all lower case, and if there are any numbers.</p>
+				</div>
+			</div>
+			<hr><br>
+			<div class="row">
+				<div class="col-sm">
+					<p class="lead">Given correct output, the program then compares the guess to the hidden word. The player will recieve hints in the form of bulls or cows, and they will be told if the input they are entering is invalid - entering an invalid guess does not take a turn away from the player.</p>
+					<p class="lead">The game continues until either the player answers correctly, or they run out of turns (which are dynamically selected based on word length to scale difficulty accordingly).</p>
+				</div>
+				<div class="col-sm">
+					<a href="../img/bullsandcows/console_two.png">
+						<img src="../img/bullsandcows/console_two.png" alt="console_two" id="console_two">
+					</a>
+					<p class="lead text-center text-muted">Demonstration of a game</p>
+				</div>
+			</div>
+			<hr><br>
+			<div class="row">
+				<p class="lead">If you want to dive deeper into the source code, or just want to try the game, head over to my <a href="#">GitHub Repository</a> to take a look or download it for yourself!</p>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>

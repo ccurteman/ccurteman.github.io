@@ -1,0 +1,16 @@
+.body {
+    background-image: linear-gradient(0deg, black, grey);
+}
+
+.card-deck {
+    padding-top: 5%;
+    background-repeat:
+}
+
+.card {
+    box-shadow: 10px 10px 5px grey;
+}
+
+#icon {
+	padding: 5px;
+}
