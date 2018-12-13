@@ -1,6 +1,7 @@
-.html, .body {
-	height: 100%;
+html, body {
+	height: 100vh;
 	margin: 0;
+	overflow: hidden;
 }
 
 #navbar {
@@ -13,10 +14,13 @@
 	background-repeat: no-repeat;
     background-size: cover;
 	height: 900px;
+	width: auto;
 }
 
 #header {
 	background-color: transparent;
+	margin-left: 5%;
+	margin-bottom: 10%;
 }
 
 #header-title {
