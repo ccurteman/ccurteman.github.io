@@ -25,7 +25,7 @@ TypeWriter.prototype.type = function () {
     }
 
     this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
-    let typeSpeed = 150;
+    let typeSpeed = 100;
 
     if (this.isDeleting) {
         typeSpeed /= 2;
@@ -37,7 +37,7 @@ TypeWriter.prototype.type = function () {
     } else if (this.isDeleting && this.txt === '') {
         this.isDeleting = false;
         this.wordIndex++;
-        typeSpeed = 500;
+        typeSpeed = 300;
     }
 
     // If fullTxt is equal to the last word in our array, and the typewriter is on the last letter
